@@ -1,3 +1,8 @@
+
+# Original Credits Goes to mceaser/laravel-survey
+
+Just made this package to use in 5.7.* verion, original was need to update to this version.
+
 # Add question to your Laravel application
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mcesar/laravel-survey.svg?style=flat-square)](https://packagist.org/packages/mcesar/laravel-survey)
@@ -28,7 +33,7 @@ This package can be used in Laravel 5.4 or higher. If you are using an older ver
 You can install the package via composer:
 
 ``` bash
-composer require mcesar/laravel-survey
+composer require jangraviren/laravel-survey
 ```
 
 In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider in `config/app.php` file:
