@@ -3,9 +3,9 @@
 namespace JangraViren\Survey;
 
 use Illuminate\Support\ServiceProvider;
-use MCesar\Survey\Contracts\Answer as AnswerContract;
-use MCesar\Survey\Contracts\Category as CategoryContract;
-use MCesar\Survey\Contracts\Question as QuestionContract;
+use JangraViren\Survey\Contracts\Answer as AnswerContract;
+use JangraViren\Survey\Contracts\Category as CategoryContract;
+use JangraViren\Survey\Contracts\Question as QuestionContract;
 
 class SurveyServiceProvider extends ServiceProvider
 {
