@@ -60,7 +60,7 @@ php artisan migrate
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="MCesar\Survey\SurveyServiceProvider" --tag="config"
+php artisan vendor:publish --provider="JangraViren\Survey\SurveyServiceProvider" --tag="config"
 ```
 
 When published, [the `config/survey.php` config file](https://github.com/mcesar/laravel-survey/blob/master/config/survey.php) contains:
