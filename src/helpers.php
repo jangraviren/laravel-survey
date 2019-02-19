@@ -1,5 +1,6 @@
 <?php
 
+namespace JangraViren\Survey;
 /**
  * @param string $guard
  *
