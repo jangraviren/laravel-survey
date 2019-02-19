@@ -1,6 +1,6 @@
 <?php
 
-namespace MCesar\Survey;
+namespace JangraViren\Survey;
 
 use Illuminate\Support\ServiceProvider;
 use MCesar\Survey\Contracts\Answer as AnswerContract;

@@ -1,6 +1,6 @@
 <?php
 
-namespace MCesar\Survey\Contracts;
+namespace JangraViren\Survey\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

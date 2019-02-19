@@ -1,11 +1,11 @@
 <?php
 
-namespace MCesar\Survey\Contracts;
+namespace JangraViren\Survey\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use MCesar\Survey\Contracts\Answer as AnswerContract;
+use JangraViren\Survey\Contracts\Answer as AnswerContract;
 
 interface Question
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace MCesar\Survey\Models;
+namespace JangraViren\Survey\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use MCesar\Survey\Contracts\Answer as AnswerContract;
+use JangraViren\Survey\Contracts\Answer as AnswerContract;
 
 class Answer extends Model implements AnswerContract
 {

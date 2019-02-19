@@ -1,14 +1,14 @@
 <?php
 
-namespace MCesar\Survey\Models;
+namespace JangraViren\Survey\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use MCesar\Survey\Contracts\Answer as AnswerContract;
-use MCesar\Survey\Contracts\Question as QuestionContract;
+use JangraViren\Survey\Contracts\Answer as AnswerContract;
+use JangraViren\Survey\Contracts\Question as QuestionContract;
 
 class Question extends Model implements QuestionContract
 {

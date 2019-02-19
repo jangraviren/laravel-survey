@@ -1,13 +1,13 @@
 
-# Original Credits Goes to mceaser/laravel-survey
-
-Just made this package to use in 5.7.* verion, original was need to update to this version.
-
+# Original Credits
+    Goes to mceaser/laravel-survey
+    Just made this package to use in 5.7.* version.
+    
 # Add question to your Laravel application
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mcesar/laravel-survey.svg?style=flat-square)](https://packagist.org/packages/mcesar/laravel-survey)
-[![Build Status](https://img.shields.io/travis/milo526/laravel-survey/master.svg?style=flat-square)](https://travis-ci.org/milo526/laravel-survey)
-[![Total Downloads](https://img.shields.io/packagist/dt/mcesar/laravel-survey.svg?style=flat-square)](https://packagist.org/packages/mcesar/laravel-survey)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/jangraviren/laravel-survey.svg?style=flat-square)](https://packagist.org/packages/jangraviren/laravel-survey)
+[![Build Status](https://img.shields.io/travis/jangraviren/laravel-survey/master.svg?style=flat-square)](https://travis-ci.org/jangraviren/laravel-survey)
+[![Total Downloads](https://img.shields.io/packagist/dt/jangraviren/laravel-survey.svg?style=flat-square)](https://packagist.org/packages/jangraviren/laravel-survey)
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -41,14 +41,14 @@ In Laravel 5.5 the service provider will automatically get registered. In older 
 ```php
 'providers' => [
     // ...
-    MCesar\Survey\SurveyServiceProvider::class,
+    JangraViren\Survey\SurveyServiceProvider::class,
 ];
 ```
 
-You can publish [the migration](https://github.com/milo526/laravel-survey/blob/master/database/migrations/create_survey_tables.php.stub) with:
+You can publish [the migration](https://github.com/jangraviren/laravel-survey/blob/master/database/migrations/create_survey_tables.php.stub) with:
 
 ```bash
-php artisan vendor:publish --provider="MCesar\Survey\SurveyServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="JangraViren\Survey\SurveyServiceProvider" --tag="migrations"
 ```
 
 After the migration has been published you can create the category-, question- and answer-tables by running the migrations:
@@ -75,30 +75,30 @@ return [
          * Of course, it is often just the "Category" model but you may use whatever you like.
          *
          * The model you want to use as a Category model needs to implement the
-         * `MCesar\Survey\Contracts\Category` contract.
+         * `JangraViren\Survey\Contracts\Category` contract.
          */
 
-        'category' => MCesar\Survey\Models\Category::class,
+        'category' => JangraViren\Survey\Models\Category::class,
 
         /*
          * We need to know which Eloquent model should be used to retrieve your questions.
          * Of course, it is often just the "Question" model but you may use whatever you like.
          *
          * The model you want to use as a Question model needs to implement the
-         * `MCesar\Survey\Question\Category` contract.
+         * `JangraViren\Survey\Question\Category` contract.
          */
 
-        'question' => MCesar\Survey\Models\Question::class,
+        'question' => JangraViren\Survey\Models\Question::class,
 
         /*
          * We need to know which Eloquent model should be used to retrieve your answers.
          * Of course, it is often just the "Answer" model but you may use whatever you like.
          *
          * The model you want to use as a Answer model needs to implement the
-         * `MCesar\Survey\Question\Answer` contract.
+         * `JangraViren\Survey\Question\Answer` contract.
          */
 
-        'answer' => MCesar\Survey\Models\Answer::class,
+        'answer' => JangraViren\Survey\Models\Answer::class,
 
         /*
          * We need to know which Eloquent model should be used to assign the answers to.
@@ -117,14 +117,14 @@ return [
 You can install the package via Composer:
 
 ``` bash
-composer require mcesar/laravel-survey
+composer require jangraviren/laravel-survey
 ```
 
 Copy the required files:
 
 ```bash
-cp vendor/mcesar/laravel-survey/config/permission.php config/survey.php
-cp vendor/mcesar/laravel-survey/database/migrations/create_survey_tables.php.stub database/migrations/2018_01_01_000000_create_survey_tables.php
+cp vendor/jangraviren/laravel-survey/config/permission.php config/survey.php
+cp vendor/jangraviren/laravel-survey/database/migrations/create_survey_tables.php.stub database/migrations/2018_01_01_000000_create_survey_tables.php
 ```
 
 Now, run your migrations:
@@ -137,7 +137,7 @@ Then, register the configuration and the service provider:
 
 ```php
 $app->configure('survey');
-$app->register(MCesar\Survey\SurveyServiceProvider::class);
+$app->register(JangraViren\Survey\SurveyServiceProvider::class);
 ```
 
 ## Usage
@@ -148,21 +148,21 @@ The models supplied by this package can be used the same as any other model you 
 
 If you need to EXTEND the existing models note that:
 
-- Your `Category` model needs to extend the `MCesar\Survey\Models\Category` model
-- Your `Question` model needs to extend the `MCesar\Survey\Models\Question` model
-- Your `Answer` model needs to extend the `MCesar\Survey\Models\Answer` model
+- Your `Category` model needs to extend the `JangraViren\Survey\Models\Category` model
+- Your `Question` model needs to extend the `JangraViren\Survey\Models\Question` model
+- Your `Answer` model needs to extend the `JangraViren\Survey\Models\Answer` model
 
 If you need to REPLACE the existing  models you need to keep the
 following things in mind:
 
-- Your `Category` model needs to implement the `MCesar\Survey\Contracts\Category` contract
-- Your `Question` model needs to implement the `MCesar\Survey\Contracts\Question` contract
-- Your `Answer` model needs to implement the `MCesar\Survey\Contracts\Answer` contract
+- Your `Category` model needs to implement the `JangraViren\Survey\Contracts\Category` contract
+- Your `Question` model needs to implement the `JangraViren\Survey\Contracts\Question` contract
+- Your `Answer` model needs to implement the `JangraViren\Survey\Contracts\Answer` contract
 
 In BOTH cases, whether extending or replacing, you will need to specify your new models in the configuration. To do this you must update the `models.categorie`, `models.question` and `models.answer` values in the configuration file after publishing the configuration with this command:
 
 ```bash
-php artisan vendor:publish --provider="MCesar\Survey\SurveyServiceProvider" --tag="config"
+php artisan vendor:publish --provider="JangraViren\Survey\SurveyServiceProvider" --tag="config"
 ```
  
 ### Testing
@@ -173,7 +173,7 @@ composer test
 
 ## Credits
 
-- [Milo Cesar](https://github.com/milo526)
+- [Virender Jangra](https://github.com/jangraviren)
 - [All Contributors](../../contributors)
 
 ## License

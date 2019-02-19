@@ -12,7 +12,7 @@ return [
          * `MCesar\Survey\Contracts\Category` contract.
          */
 
-        'category' => MCesar\Survey\Models\Category::class,
+        'category' => JangraViren\Survey\Models\Category::class,
 
         /*
          * We need to know which Eloquent model should be used to retrieve your questions.
@@ -22,7 +22,7 @@ return [
          * `MCesar\Survey\Question\Category` contract.
          */
 
-        'question' => MCesar\Survey\Models\Question::class,
+        'question' => JangraViren\Survey\Models\Question::class,
 
         /*
          * We need to know which Eloquent model should be used to retrieve your answers.
@@ -32,7 +32,7 @@ return [
          * `MCesar\Survey\Question\Answer` contract.
          */
 
-        'answer' => MCesar\Survey\Models\Answer::class,
+        'answer' => JangraViren\Survey\Models\Answer::class,
 
         /*
          * We need to know which Eloquent model should be used to assign the answers to.
