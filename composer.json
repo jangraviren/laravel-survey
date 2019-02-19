@@ -1,6 +1,6 @@
 {
-    "name": "mcesar/laravel-survey",
-    "description": "Survey package for Laravel 5.5 and up",
+    "name": "jangraviren/laravel-survey",
+    "description": "Original credits goes to mceaser/laravel-survey. Only add 5.7.* support",
     "keywords": [
         "laravel",
         "survey",
@@ -11,8 +11,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Milo Cesar",
-            "email": "me@mcesar.eu"
+            "name": "Virender Kumar",
+            "email": "jangra.viren@gmail.com"
         }
     ],
     "require": {
