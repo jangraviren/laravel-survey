@@ -11,7 +11,7 @@ class SurveyServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        if (isNotLumen()) {
+        if (isLumenNot()) {
             $this->publishes([
                 __DIR__.'/../config/survey.php' => config_path('survey.php'),
             ], 'config');
@@ -30,7 +30,7 @@ class SurveyServiceProvider extends ServiceProvider
 
     public function register()
     {
-        if (isNotLumen()) {
+        if (isLumenNot()) {
             $this->mergeConfigFrom(
                 __DIR__.'/../config/survey.php',
                 'survey'

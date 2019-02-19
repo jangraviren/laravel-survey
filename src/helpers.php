@@ -1,12 +1,10 @@
 <?php
-
-namespace JangraViren\Survey;
 /**
  * @param string $guard
  *
  * @return string|null
  */
-function isNotLumen() : bool
+function isLumenNot() : bool
 {
     return ! preg_match('/lumen/i', app()->version());
 }
