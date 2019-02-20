@@ -7,7 +7,7 @@
         "question",
         "answer"
     ],
-    "homepage": "https://github.com/spatie/laravel-permission",
+    "homepage": "https://github.com/jangraviren/laravel-survey",
     "license": "MIT",
     "authors": [
         {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MCesar\\Survey\\": "src"
+            "JangraViren\\Survey\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "MCesar\\Survey\\Test\\": "tests"
+            "JangraViren\\Survey\\Test\\": "tests"
         },
         "files": [
             "src/helpers.php"
